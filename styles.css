@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+.star{
+	width: 0;
+	height: 0;
+	margin: 50px 0;
+	position: relative;
+	display: inline-block;
+	color: yellow;
+	border-right: 100px solid transparent;
+	border-bottom: 70px solid yellow;
+	border-left: 100px solid transparent;
+	transform: rotate(35deg);
+}
+.star:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-bottom: 70px solid yellow;
+	border-left: 100px solid transparent;
+	position: absolute;
+	top: 0px;
+	left: -100px;
+	transform: rotate(-70deg);
+}
+.star:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	border-bottom: 70px solid yellow;
+	border-left: 100px solid transparent;
+	position: absolute;
+	top: 8px;
+	left: -97px;
+	transform: rotate(-145deg);
+}
